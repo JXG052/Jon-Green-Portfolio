@@ -62,11 +62,17 @@
   .hero-banner h2{
     color: var(--main-white);
   }
+
+  /* Applies to About, Work and Contact */
   .page-section{
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    margin-left: 10px ;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
   #about {
     border: 1pt solid orange;
@@ -81,6 +87,8 @@
   #about-me-p {
     grid-area: about-me-p;
   }
+
+  /* Start of Work Section */
   #work {
     border: 1pt solid blue;
     grid-template-areas:
@@ -90,6 +98,7 @@
   #work-h2{
     grid-area: work-h2;
     padding-left: 20px;
+    border-right: 5px solid blue;
   }
   #project-container{
     grid-area: project-container;
@@ -147,16 +156,32 @@
     font-size: 18px;
     border-bottom: 5px solid #ff6200;
   }
+  /* End of Work Section */
 
   /* contact section */
   #contact {
+    height: 150px;
     grid-template-areas: 
-    "contact-h2 contact-info contact-info"
-    "contact-h2 contact-info contact-info";
+    "contact-h2 contact-links contact-links"
+    "contact-h2 contact-links contact-links";
+    margin-bottom: 0px;
   }
   #contact-h2{
     grid-area: contact-h2;
   }
-  #contact-info {
-    grid-area: contact-info;
+  #contact-links {
+    grid-area: contact-links;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 980px;
+    flex-wrap: wrap;
+  }
+  .contact-details {
+    font-size: 18px;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
   }
