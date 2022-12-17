@@ -95,8 +95,8 @@
     grid-area: project-container;
     border: 1pt solid greenyellow;
     display: grid;
-    grid-gap: 3px;
-    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 30px;
+    grid-template-rows: repeat(4, 250px);
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     "p1 p1"
@@ -107,24 +107,48 @@
   #p1{
     grid-area: p1;
     border: 1pt solid yellow;
+    background-image: url(/images/images/patio.png);
   }
   #p2{
     grid-area: p2;
     border: 1pt solid pink;
+    background-image: url(/images/images/beds.png);
   }
   #p3{
     grid-area: p3;
     border: 1pt solid red;
-    
+    background-image: url(/images/images/couch.png);
   }
   #p4{
     grid-area: p4;
     border: 1pt solid purple;
+    background-image: url(/images/images/desks.png);
   }
   #p5{
     grid-area: p5;
     border: 1pt solid rgb(0, 102, 128);
+    background-image: url(/images/images/bookcases.png);
   }
+
+  .project {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+  .heading {
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 25px;
+    color: white;
+    font-size: 18px;
+    border-bottom: 5px solid #ff6200;
+  }
+
+  /* contact section */
   #contact {
     grid-template-areas: 
     "contact-h2 contact-info contact-info"
