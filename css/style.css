@@ -149,13 +149,19 @@
     align-content: end;
   }
   .heading {
-    background-color: rgba(0,0,0,0.7);
-    padding: 15px;
+    background-color: blue;
+    
+    width: 100px;
     height: 25px;
     color: white;
     font-size: 18px;
     border-bottom: 5px solid #ff6200;
+    padding: 30px;
   }
+
+
+
+
   /* End of Work Section */
 
   /* contact section */
@@ -184,4 +190,29 @@
   
   .contact-details:hover {
     transform: translateY(8px);
+  }
+
+  /* Media Queries for project Grid */
+  @media screen and(max-width:980px) {
+
+  }
+  @media screen and (max-width:768px) {
+    #project-container{
+        grid-area: project-container;
+        border: 1pt solid greenyellow;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-rows: repeat(5, 250px);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "p1"   
+        "p2"
+        "p3"
+        "p4"
+        "p5";
+      }
+      .project{
+        width: 100%;
+      }
+
   }
