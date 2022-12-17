@@ -15,6 +15,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
   }
+  /* Styling for Header */
   header {
     border: 1pt solid black;
     display: flex;
@@ -45,8 +46,6 @@
   nav ul {
     display: flex;
     padding-right: 20px;
-
-    
   }
   nav ul li {
     margin: 10px;
@@ -57,18 +56,31 @@
     text-decoration-thickness: 3px;
     color: var(--main-blue);
     font-weight: lighter;
+    text-underline-offset: 8px;
   }
 
+  /* Styling for Hero Banner */
   .hero-banner {
-    background-color: #000;
+    background-image: url(/images/flowers-background.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 200px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
   }
-  
+  .hero-banner div {
+    background-color: var(--main-blue);
+    padding: 5px;
+    height:50px;
+    position: relative;
+    bottom: 15px;
+    right: 50px;
+  }
   .hero-banner h2{
-    color: var(--main-white);
+    color: var(--main-gray);
+    position: relative;
+    bottom: 15px;
   }
 
   /* Applies to About, Work and Contact */
