@@ -3,6 +3,7 @@
     --main-green: #7CFC00;
     --main-blue: #3ad2ff;
     --main-gray: #303841;
+    --text-blue: #002b57;
   }
 
 * {
@@ -14,6 +15,7 @@
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
+    background-color: #dcdcdc;
   }
   /* Styling for Header */
   header {
@@ -84,28 +86,31 @@
   }
 
   /* Applies to About, Work and Contact */
-  .page-section{
+  /* .page-section{
     display: grid;
     grid-gap: 3px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 20% 80%;
     margin-left: 10px ;
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 50px;
+  } */
+  #about-section {
+    display: grid;
+    grid-template-columns: 20% 80%;
+
   }
-  #about {
-    border: 1pt solid orange;
-    grid-template-areas: 
-    "about-me about-me-p about-me-p"
-    "about-me about-me-p about-me-p"
-  }
-  #about-me {
-    grid-area: about-me;
-    padding-left: 20px;
+  #about-section h2 {
+    border-right: 3px solid var(--text-blue);
+    text-align: right;
+    font-size: xx-large;
+    word-wrap: break-word;
+    padding-right: 10px;
+    color: var(--text-blue);
   }
   #about-me-p {
-    grid-area: about-me-p;
+    padding: 0px 50px 50px 50px;
+    color: var(--text-blue);
   }
 
   /* Start of Work Section */
