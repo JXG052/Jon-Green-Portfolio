@@ -145,18 +145,16 @@
     background-repeat: no-repeat;
     margin: 5px;
     cursor: pointer;
-    display: grid;
-    align-content: end;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 30px;
   }
-  .heading {
-    background-color: blue;
-    
-    width: 100px;
-    height: 25px;
-    color: white;
-    font-size: 18px;
-    border-bottom: 5px solid #ff6200;
-    padding: 30px;
+
+  .heading-container{
+    background-color: aqua;
+  }
+  .heading-container h2, h3{
+    padding: 5px;
   }
 
 
