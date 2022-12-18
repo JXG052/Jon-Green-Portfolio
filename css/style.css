@@ -6,7 +6,7 @@
     --text-blue: #002b57;
   }
   a:any-link {
-    text-decoration: none;
+    /* text-decoration: none; */
   }
 
 * {
@@ -61,6 +61,7 @@
     list-style: none;
   }
   nav a {
+    text-decoration: underline;
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
     color: var(--main-blue);
@@ -108,7 +109,8 @@
 
   }
   #about-section h2, 
-  #work-section h2 {
+  #work-section h2,
+  #contact-section h2 {
     border-right: 3px solid var(--text-blue);
     text-align: right;
     font-size: xx-large;
@@ -127,6 +129,7 @@
     grid-template-columns: 20% 80%;
     grid-template-areas:
     "work-h2 project-container";
+    padding-bottom: 10px;
   }
 
   #project-container{
@@ -186,18 +189,22 @@
     font-size: 12px;
     margin: 1px;
   }
+  #project-container a {
+    text-decoration: none;
+  }
 
 
 
   /* End of Work Section */
 
   /* contact section */
-  #contact {
+  #contact-section {
+    display: grid;
     height: 150px;
+    grid-template-columns: 20% 80%;
     grid-template-areas: 
-    "contact-h2 contact-links contact-links"
-    "contact-h2 contact-links contact-links";
-    margin-bottom: 0px;
+    "contact-h2 contact-links";
+
   }
   #contact-h2{
     grid-area: contact-h2;
@@ -209,7 +216,17 @@
     width: 100%;
     max-width: 980px;
     flex-wrap: wrap;
+    margin-top: 20px;
   }
+#contact-links a {
+  text-decoration: underline;
+  text-decoration-line: underline;
+  text-decoration-thickness: 3px;
+  color: var(--text-blue);
+  font-weight: lighter;
+  text-underline-offset: 8px;
+}
+
   .contact-details {
     font-size: 18px;
     transition: transform 0.3s ease-out;
