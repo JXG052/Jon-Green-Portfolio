@@ -20,7 +20,6 @@
   }
   /* Styling for Header */
   header {
-    border: 1pt solid black;
     display: flex;
     justify-content: space-between;
     background-color: var(--main-gray);
@@ -33,6 +32,7 @@
     width: 300px;
     background-color: var(--main-blue);
     display: flex;
+    flex-wrap: wrap;
   }
   h1 {
     position: relative;
@@ -48,6 +48,7 @@
   nav {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     margin-right: 20px;
   }
   nav ul {
@@ -95,6 +96,7 @@
     position: relative;
     left: -480px;
     border-radius: 100px;
+    bottom: 5px;
   }
 
   /* Applies to About, Work and Contact */
@@ -249,14 +251,35 @@
     transform: translateY(8px);
   }
 
-  /* Media Queries for project Grid */
-  @media screen and(max-width:980px) {
-
+  
+  @media only screen and(max-width:980px) {
+    .hero-banner img {
+      left: 100px;
+      
+    }
   }
-  @media screen and (max-width:768px) {
+  @media only screen and (max-width:768px) {
+    * {
+      width:fit-content
+    }
+    .hero-banner{
+      width: fit-content;
+      background-size: cover;
+
+    }
+    .hero-banner img {
+      left: 0px;
+
+    }
+    h1 {
+      position: relative;
+      left: 80px;
+    }
+    h2{
+      font-size: small;
+    }
     #project-container{
         grid-area: project-container;
-        border: 1pt solid greenyellow;
         display: grid;
         grid-gap: 30px;
         grid-template-rows: repeat(5, 250px);
@@ -268,8 +291,12 @@
         "p4"
         "p5";
       }
-      .project{
-        width: 100%;
-      }
+    #contact-section{
+      display: grid;
+      font-size: small;
+    }
+    #contact-section h2 {
+      font-size: small;
+    }
 
   }
