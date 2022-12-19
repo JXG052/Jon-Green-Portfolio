@@ -18,10 +18,10 @@ No Installation necessary.
 
 ## Usage
 Use as a standard landing page.
-All links will open in new tabs. Any inclomplete links will instead link to ```google.com. ```
+All links will open in new tabs. Any inclomplete links will instead link to
 
     
-    ![alt screenshot of portfolio](./images/screenshot.png)
+![alt text](images/screenshot.png)
 
 Link to [Live-Page](https://jxg052.github.io/Jon-Green-Portfolio/)
    

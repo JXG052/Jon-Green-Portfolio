@@ -70,7 +70,7 @@
 
   /* Styling for Hero Banner */
   .hero-banner {
-    background-image: url(images/flowers-background.jpg) ;
+    background-image: url(./images/flowers-background.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
@@ -154,23 +154,23 @@
   }
   #p1{
     grid-area: p1;   
-    background-image: url(images/palindrome-bob.png);
+    background-image: url(./images/palindrome-bob.png);
   }
   #p2{
     grid-area: p2;    
-    background-image: url(images/scorecard.png);
+    background-image: url(./images/scorecard.png);
   }
   #p3{
     grid-area: p3;
-    background-image: url(images/caesers-cipher.jpg);
+    background-image: url(./images/caesers-cipher.jpg);
   }
   #p4{
     grid-area: p4;
-    background-image: url(images/pre-work.png);
+    background-image: url(./images/pre-work.png);
   }
   #p5{
     grid-area: p5;
-    background-image: url(images/css-cheatsheet.png);
+    background-image: url(./images/css-cheatsheet.png);
   }
 
   .project {
