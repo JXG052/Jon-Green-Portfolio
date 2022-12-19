@@ -18,7 +18,7 @@
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.5;
-    background-color: #dcdcdc;
+    background-color: #f5f5f4;
   }
   /* Styling for Header */
   header {
@@ -91,6 +91,12 @@
     color: var(--main-gray);
     position: relative;
     bottom: 15px;
+  }
+  .hero-banner img{
+    height: 190px;
+    position: relative;
+    left: -480px;
+    border-radius: 100px;
   }
 
   /* Applies to About, Work and Contact */
