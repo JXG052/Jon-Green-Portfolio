@@ -263,7 +263,7 @@
       width:fit-content
     }
     .hero-banner{
-      width: fit-content;
+      width: 100%;
       background-size: cover;
 
     }
@@ -277,6 +277,9 @@
     }
     h2{
       font-size: small;
+    }
+    #about-section p{
+      padding-right: 500px;
     }
     #project-container{
         grid-area: project-container;
@@ -294,9 +297,14 @@
     #contact-section{
       display: grid;
       font-size: small;
+      
     }
     #contact-section h2 {
-      font-size: small;
+      font-size: medium;
+      padding-right: 15px;
+    }
+    #contact-links{
+      padding-right: 100px;
     }
 
   }
