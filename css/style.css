@@ -5,9 +5,7 @@
     --main-gray: #303841;
     --text-blue: #002b57;
   }
-  a:any-link {
-    /* text-decoration: none; */
-  }
+
 
 * {
     box-sizing: border-box;
@@ -197,6 +195,15 @@
   }
   #project-container a {
     text-decoration: none;
+  }
+
+  .project {
+    font-size: 18px;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .project:hover {
+    transform: scale(1.1);
   }
 
 
